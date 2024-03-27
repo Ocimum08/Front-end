@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import ImageUpload from './ImageUpload';
+import ImageUpload from './ImageUpload';
 import ResultsDisplay from './ResultsDisplay';
 import AnomalyDetection from './AnomalyDetection';
 import CountingCar from './CountingCar';
@@ -47,10 +47,10 @@ const MainContentArea = ({services}) => {
 
       <div className="row">
         <div className="col-md-4"> 
-          {/* <ImageUpload 
+          <ImageUpload 
             onImageUpload={handleImageUpload}
             disabled={isLoading}
-          /> */}
+          />
         </div>
 
         <div className="col-md-8">
@@ -87,7 +87,7 @@ const MainContentArea = ({services}) => {
       {/* Results Display */}
       <div className="row">
         <div className="col-md-12">
-          {/* <ResultsDisplay analysisData={analysisData} /> */}
+          <ResultsDisplay analysisData={analysisData} />
         </div>
       </div>
     </div>
