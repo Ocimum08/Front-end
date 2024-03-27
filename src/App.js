@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+// import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './styles.css'; 
 import NavigationBar from './components/NavigationBar';
 import MainContentArea from './components/MainContentArea';

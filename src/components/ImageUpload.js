@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
+import ResultsDisplay from './ResultsDisplay';
 
 // Replace with your actual Azure endpoint and Key
 const AZURE_CONFIG = {
