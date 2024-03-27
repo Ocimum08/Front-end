@@ -1,0 +1,425 @@
+/* Overall Theme */
+.app-container {
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #20232a;
+  color: #e0e0e0;
+  padding: 20px; /* Adding container padding */
+  height: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+/* CSS Reset */
+body {
+  margin: 0; 
+  padding: 0;
+}
+
+
+/* Navigation Bar */
+.navbar-dark {
+  background-color: #14181f; 
+}
+
+.navbar-brand { 
+  color: #00d1b2; /* Highlight color for logo */
+}
+
+.navbar-nav .nav-link {
+  color: #808da1;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active { 
+  color: #ffffff; 
+  background-color: #1a1e25;
+}
+.navbar-nav.ml-auto {
+  margin-left: auto !important; /* Push the elements to the right */
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  background-color: #20232a;
+  border-color: #30363d; 
+}
+
+.dropdown-menu .dropdown-item {
+  color: #aaa;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item.active { 
+  color: #ffffff;
+  background-color: #00d1b2; 
+}
+
+.dropdown-menu .dropdown-divider {
+  border-top-color: #40454d;
+}
+
+/* Service Card Styling */
+.service-card {
+  background-color: #171a21;
+  color: #e0e0e0;
+  border: 1px solid #2f353f;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+  background-color: #1a1e25;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service-card h3 {
+  color: #00d1b2; 
+  margin-bottom: 10px;
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #687380; 
+  margin-bottom: 15px;
+}
+
+/* Services Layout */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.service-item {
+  flex: 1 0 25%; /* Adjust basis for desired columns */
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Results Display */
+.results-display {
+  margin-top: 30px;
+  border: 2px solid #222a35;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: #212529; 
+  color: #eee;
+  border-radius: 5px;
+}
+
+/* Hover for Results */
+.results-display:hover {
+  box-shadow: 0 6px 12px rgba(0, 177, 154, 0.5);
+}
+
+/* Layout */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  overflow-y: auto;
+}
+
+.container-fluid {
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.image-upload-container {
+  background-color: #1a1e25;
+  border: 2px dashed #30363d;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.image-upload-label {
+  color: #687380;
+  font-size: 18px;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.icon {
+  color: #3399ff; /* Default icon color */
+  margin-right: 10px; 
+} 
+
+.result-label {
+  font-weight: bold;
+}
+
+/* Error Styles   */
+.error-message {
+  color: #ff6666;
+}
+
+/* Warning Styles (Optional) */
+.warning-icon {
+  color: #ffcc66;
+}
+
+/* Image Upload Styles */
+.image-upload-area {
+  background-color: #212529; 
+  color: #eee;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center; 
+}
+
+.image-preview-container {
+  margin-top: 15px;
+}
+
+.img-preview { 
+  max-width: 250px; 
+  max-height: 250px;
+}
+
+/* Button Styles (Refined slightly ) */
+.btn-primary {
+  background-color: #007bff; 
+  border-color: #007bff; 
+}
+
+.btn-primary:hover {
+  background-color: #0062cc; 
+  border-color: #0056b3; 
+  box-shadow: 0 2px 6px rgba(0, 101, 120, 0.4); /* Subtle shadow */
+}
+
+.no-detections, .loading-message {
+  color: #999;
+}
+
+.results-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.anomaly-detection-results {
+  background-color: #212529; /* Example dark background */
+  color: #eee; /* Example light text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.no-anomalies {
+  color: #999; /* Muted message color */
+}
+
+.warning-icon {
+  color: #ffcc66; /* Example warning color */
+  margin-right: 10px; 
+}
+
+.anomaly-details {
+  display: flex; /* Allow type and confidence to line up neatly */
+  align-items: center;
+}
+
+.anomaly-visualization { 
+  margin-top: 10px;
+  border: 1px dashed #666; /* Placeholder style for visualization  */
+}
+
+.no-cars-detected {
+  color: #999; /* Muted message color */
+}
+
+.car-count-display {
+  font-size: 24px; 
+  font-weight: bold;
+  align-items: center; /* Center the icon vertically */
+}
+
+.icon {
+  color: #3399ff; /* Example car icon color */ 
+  margin-right: 10px; 
+} 
+
+.counting-car-results {
+  background-color: #212529; /* Example dark background */
+  color: #eee; /* Example light text */
+  padding: 20px;
+  border-radius: 5px;
+} 
+
+.count-unavailable {
+  color: #ff6666; /* Example error color */
+}
+
+.facial-recognition-results {
+  background-color: #212529; /* Example dark background */
+  color: #eee; /* Example light text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.icon {
+  color: #3399ff; /* Example face icon color */ 
+  margin-right: 10px; 
+} 
+
+.face-details {
+  display: flex; /* Allow identity and confidence to line up */
+  align-items: center;
+}
+
+.face-visualization { 
+  margin-top: 10px;
+  border: 1px dashed #666; /* Placeholder style for visualization  */
+}
+
+.no-faces-detected {
+  color: #999; /* Muted message color */
+}
+
+.detected-face-image {
+   margin-top: 10px;
+   /* Optionally add a border for the detected face image */ 
+}
+
+.license-plate-recognition-results {
+  background-color: #212529; /* Example dark background */
+  color: #eee; /* Example light text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.plate-details {
+  display: flex; /* Allow number and confidence to line up */
+  align-items: center;
+}
+
+.plate-visualization { 
+  margin-top: 10px;
+  border: 1px dashed #666; /* Placeholder style for visualization  */
+}
+
+.license-plate-recognition-results {
+  background-color: #212529; /* Example dark background */
+  color: #eee; /* Example light text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.no-plate-detected {
+  color: #999; /* Muted message color */
+}
+
+.detected-plate-image {
+   margin-top: 10px;
+   /* Optionally add a border for the detected plate image */ 
+}
+
+.object-detection-results {
+  background-color: #212529; /* Example dark background */
+  color: #eee; /* Example light text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.no-objects-detected {
+  color: #999; /* Muted message color */
+}
+
+.icon {
+  color: #3399ff; /* Example object icon color */ 
+  margin-right: 10px; 
+} 
+
+.object-details {
+  display: flex; /* Allow label and confidence to line up */
+  align-items: center;
+}
+
+.object-visualization { 
+  margin-top: 10px;
+  border: 1px dashed #666; /* Placeholder style for visualization  */
+}
+
+.object-label {
+  font-weight: bold;
+}
+
+.people-counting-results {
+  background-color: #212529; /* Example dark background */
+  color: #eee; /* Example light text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.person-count-display {
+  font-size: 24px; 
+  font-weight: bold;
+  align-items: center; /* Center the icon vertically */
+}
+
+.icon {
+  color: #3399ff; /* Example person icon color */ 
+  margin-right: 10px; 
+}
+
+.person-count-display {
+  font-size: 24px; 
+  font-weight: bold;
+  align-items: center; /* Center the icon vertically */
+}
+
+.no-people-detected {
+  color: #999; /* Muted message color */
+}
+
+.img-preview { 
+  max-width: 250px; /* Limit width for better layout */
+  max-height: 250px;
+}
+
+.error-message {
+  color: #ff6666; /* Example error color */
+  margin-top: 10px;
+}
+
+.no-detections, .loading-message {
+  color: #999; /* Muted message color */
+}
+
+.icon {
+  color: #3399ff; /* Example detection icon color */ 
+  margin-right: 10px; 
+}
+
+.main-content-area { 
+  background-color: #212529; /* Example dark background */
+  color: #eee; /* Example light text */
+  padding: 20px;
+}
+
+.services-row {
+  margin-bottom: 20px; 
+} 
+
+.service-item {
+  margin-right: 10px;
+} 
+
+.service-item button {
+  background-color: #333; /* Example color for service buttons */
+  color: #eee;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.loading-message {
+  color: #999;
+}
